@@ -1,0 +1,36 @@
+// Padillo_Chap13_25.cpp : Defines the entry point for the console application.
+// Program:					backwards reply
+// Programmer:				Steven L. Padillo
+// Date:					04 December 2016
+// ~~~~~~~~~~
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+	//declaration
+	string characters = "";
+	int x = 0;
+
+	//input
+	cout << "Please enter characters to be put in reverse order: ";
+	cin >> characters;
+
+	//processing
+	cout << "Your word backwards: ";
+	for (x = characters.length() - 1; x >= 0; x--)
+	{
+		//output
+		cout << characters[x];
+
+	} //end for
+
+	//end line on end for.
+	cout << endl; 
+
+    return 0;
+}
